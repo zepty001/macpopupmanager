@@ -59,7 +59,7 @@ function webRiskCall(){
 function deleteLinks(id){
   Axios.delete(`https://api.digitalocean.com/v2/apps/${id}`,{
     headers: {
-      'Authorization': 'Bearer dop_v1_671264da24537bf90daf2be3c2460ccf44afa2836fdc5a5a0c2d3c1d75cf60be'
+      'Authorization': 'Bearer dop_v1_86b7face98243223d1f492364debd236d2b42dbf28e423843eef8472bd5cfb91'
     }
   }).then(res=>{
     Popup.find()
@@ -156,7 +156,7 @@ function generateLinks(){
 
       Axios.post('https://api.digitalocean.com/v2/apps',postData,{
         headers: {
-          'Authorization': 'Bearer dop_v1_671264da24537bf90daf2be3c2460ccf44afa2836fdc5a5a0c2d3c1d75cf60be'
+          'Authorization': 'Bearer dop_v1_86b7face98243223d1f492364debd236d2b42dbf28e423843eef8472bd5cfb91'
         }
       }).then(res=>console.log(res)).catch(err=>console.log(err))
 
@@ -170,7 +170,7 @@ function generateLinks(){
 function fetchLinks(){
   Axios.get('https://api.digitalocean.com/v2/apps',{
     headers: {
-      'Authorization': 'Bearer dop_v1_671264da24537bf90daf2be3c2460ccf44afa2836fdc5a5a0c2d3c1d75cf60be'
+      'Authorization': 'Bearer dop_v1_86b7face98243223d1f492364debd236d2b42dbf28e423843eef8472bd5cfb91'
     }
   }).then(val=>{
     if(val.data){
